@@ -1,8 +1,8 @@
-import { motion } from "framer-motion"
-import { CircleIcon } from 'lucide-react'
+import { motion } from 'framer-motion'
+import Logo from '@/lib/icons/Logo'
 
 interface SearchingStateProps {
-  searchQuery: string;
+  searchQuery: string
 }
 
 export function SearchingState({ searchQuery }: SearchingStateProps) {
@@ -13,9 +13,10 @@ export function SearchingState({ searchQuery }: SearchingStateProps) {
       exit={{ opacity: 0, y: -20 }}
       className="flex items-center gap-3 text-gray-600"
     >
-      <CircleIcon className="w-6 h-6" />
-      <span>Searching for {searchQuery}...</span>
+      <Logo className="w-6 h-6" />
+      <span className="font-semibold animate-shimmer bg-gradient-to-r from-gray-600 via-gray-400 to-gray-600 bg-[length:200%_100%] bg-clip-text text-transparent">
+        Searching for {searchQuery}...
+      </span>
     </motion.div>
   )
 }
-
