@@ -66,7 +66,9 @@ export function StreamingResponse({
         <div className={cn('flex gap-2', isMobile && 'items-center')}>
           <Logo className="w-6 h-6" />
           {isMobile && (
-            <span className="font-semibold text-xl">Search for it</span>
+            <span className="font-semibold text-xl text-[#212222]">
+              Search for it
+            </span>
           )}
         </div>
 
