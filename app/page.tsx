@@ -90,7 +90,7 @@ export default function ChatInterface() {
     <div className="flex h-screen bg-white">
       {isMobile ? (
         <div className="fixed top-0 left-0 right-0 flex justify-between items-center px-4 py-3 bg-white border-b border-[#E5E5E5] z-20 h-[65px]">
-          <Plus className="w-6 h-6" />
+          <Plus className="w-6 h-6" fill="black" />
           <Currency className="w-9 h-9" />
         </div>
       ) : (
@@ -116,7 +116,7 @@ export default function ChatInterface() {
                     : 'h-[50px] rounded-br-[20px] rounded-bl-[20px] left-4 right-4 px-5 text-xl',
                 )}
               >
-                <h2 className="font-semibold">{inputValue}</h2>
+                <h2 className="font-semibold text-[#212222]">{inputValue}</h2>
               </div>
 
               <div
